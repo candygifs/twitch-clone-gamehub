@@ -7,7 +7,7 @@ import { resetIngresses } from "@/actions/ingress";
 
 export async function POST(req: NextRequest) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
-  const WEBHOOK_SECRET = process.env.CLERK_WEBHOOK_SECRET;
+  const WEBHOOK_SECRET = 'whsec_udPG7Pio52cVBfRJxV5mDyWKyrKTwTCW';
 
   if (!WEBHOOK_SECRET) {
     throw new Error(
